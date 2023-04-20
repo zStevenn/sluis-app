@@ -4,7 +4,7 @@ import Route from "./routes/Route"
 
 function App() {
 	return (
-		<div className="App bg-neutral-100">
+		<div className="App bg-neutral-100 flex flex-col">
 			<Navbar />
 			<Route />
 			<Footer />
