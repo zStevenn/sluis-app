@@ -62,10 +62,10 @@ export default function Home() {
 			</div>
 
 			{/* Snacks van de maand */}
-			<div className="px-8 pt-8">
+			<div className="px-8 pt-8 container mx-auto lg:max-w-screen-lg">
 				<Subtitle>Snacks van de maand</Subtitle>
 				{/* Grid for snack cards */}
-				<div className="grid grid-cols-1 pt-4 gap-4">
+				<div className="grid grid-cols-1 md:grid-cols-2 pt-4 gap-4">
 					{/* Card */}
 					<CardWrapper>
 						<CardImage src={monthSnackOne} alt="Hotwings 5st" />
@@ -99,10 +99,10 @@ export default function Home() {
 			</div>
 
 			{/* Recente activiteiten */}
-			<div className="px-8 pt-8">
+			<div className="px-8 pt-8 container mx-auto lg:max-w-screen-lg">
 				<Subtitle>Recente activiteiten</Subtitle>
 				{/* Grid for activity cards */}
-				<div className="grid grid-cols-1 pt-4 gap-4">
+				<div className="grid grid-cols-1 md:grid-cols-2 pt-4 gap-4">
 					{/* Card */}
 					<CardWrapper>
 						<CardImage src={activityOne} alt="Nieuwe website" />
@@ -158,7 +158,7 @@ export default function Home() {
 			</div>
 
 			{/* Openingstijden */}
-			<div className="px-8 pt-8">
+			<div className="px-8 pt-8 container mx-auto lg:max-w-screen-lg">
 				<Subtitle>Openingstijden</Subtitle>
 				<Paragraph className="py-4">
 					Onze huidige openingstijden voor aankomende zomer zijn:
