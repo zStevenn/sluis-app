@@ -9,7 +9,7 @@ export default function TextInput({ children, className = "" }) {
 				placeholder={children}
 				name={children}
 				id={children}
-				className={`text-neutral-600 px-4 py-2 rounded-md shadow border-neutral-600 ${className}`}
+				className={`block w-full text-neutral-600 px-4 py-2 rounded-md shadow border-neutral-600 ${className}`}
 			/>
 		</>
 	)

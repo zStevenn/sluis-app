@@ -19,7 +19,7 @@ export default function Menu() {
 				onze webshop, daar zijn alle gerechten beschikbaar. Onze excuses voor
 				het ongemak.
 			</Paragraph>
-			<div className="flex items-center gap-4">
+			<div className="flex flex-col md:flex-row items-center gap-4">
 				<TextInput placeholder="Zoek een gerecht">Zoek gerecht...</TextInput>
 				<SearchButton />
 			</div>
