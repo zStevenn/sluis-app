@@ -20,7 +20,7 @@ export default function Menu() {
 				het ongemak.
 			</Paragraph>
 			<div className="flex flex-col md:flex-row items-center gap-4">
-				<TextInput placeholder="Zoek een gerecht">Zoek gerecht...</TextInput>
+				<TextInput placeholder="Zoek een gerecht...">Zoek gerecht</TextInput>
 				<SearchButton />
 			</div>
 		</Container>
