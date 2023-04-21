@@ -1,4 +1,7 @@
-import { ExternalPrimaryButton } from "./ExternalButton"
+import {
+	ExternalPrimaryButton,
+	ExternalSecondaryButton,
+} from "./ExternalButton"
 import { InternalPrimaryButton } from "./InternalButton"
 
-export { ExternalPrimaryButton, InternalPrimaryButton }
+export { ExternalPrimaryButton, InternalPrimaryButton, ExternalSecondaryButton }
