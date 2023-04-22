@@ -5,7 +5,7 @@ import Home from "../pages/Home"
 
 const Menu = lazy(() => import("../pages/Menu"))
 const Contact = lazy(() => import("../pages/Contact"))
-// const News = lazy(() => import("../pages/News"))
+const News = lazy(() => import("../pages/News"))
 // const NotFound = lazy(() => import("../pages/NotFound"))
 // const PrivacyPolicy = lazy(() => import("../pages/PrivacyPolicy"))
 // const CookiePolicy = lazy(() => import("../pages/CookiePolicy"))
@@ -19,7 +19,7 @@ export default function DefaultRouter() {
 				<Route exact path="/" element={<Home />} />
 				<Route path="/menu" element={<Menu />} />
 				<Route path="/contact" element={<Contact />} />
-				{/* <Route path="/nieuws" element={<News />} /> */}
+				<Route path="/nieuws" element={<News />} />
 				{/* <Route path="/vacatures" element={<UnderConstruction />} /> */}
 				{/* <Route path="/privacybeleid" element={<PrivacyPolicy />} /> */}
 				{/* <Route path="/cookiebeleid" element={<CookiePolicy />} /> */}
