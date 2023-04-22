@@ -1,11 +1,12 @@
 import { lazy, Suspense } from "react"
 import { Route, Routes } from "react-router-dom"
 import Home from "../pages/Home"
-// import Loading from "../components/Loading"
+import Loading from "../components/Loading"
 
 const Menu = lazy(() => import("../pages/Menu"))
 const Contact = lazy(() => import("../pages/Contact"))
 const News = lazy(() => import("../pages/News"))
+const Vacatures = lazy(() => import("../pages/Vacatures"))
 // const NotFound = lazy(() => import("../pages/NotFound"))
 // const PrivacyPolicy = lazy(() => import("../pages/PrivacyPolicy"))
 // const CookiePolicy = lazy(() => import("../pages/CookiePolicy"))
@@ -14,13 +15,13 @@ const News = lazy(() => import("../pages/News"))
 
 export default function DefaultRouter() {
 	return (
-		<Suspense fallback={<div>Laden</div>}>
+		<Suspense fallback={<Loading />}>
 			<Routes>
 				<Route exact path="/" element={<Home />} />
-				<Route path="/menu" element={<Menu />} />
-				<Route path="/contact" element={<Contact />} />
-				<Route path="/nieuws" element={<News />} />
-				{/* <Route path="/vacatures" element={<UnderConstruction />} /> */}
+				<Route exact path="/menu" element={<Menu />} />
+				<Route exact path="/contact" element={<Contact />} />
+				<Route exact path="/nieuws" element={<News />} />
+				<Route exact path="/vacatures" element={<Vacatures />} />
 				{/* <Route path="/privacybeleid" element={<PrivacyPolicy />} /> */}
 				{/* <Route path="/cookiebeleid" element={<CookiePolicy />} /> */}
 				{/* <Route path="/FAQ" element={<FAQ />} /> */}
