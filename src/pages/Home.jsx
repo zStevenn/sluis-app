@@ -164,34 +164,36 @@ export default function Home() {
 						Onze huidige openingstijden voor aankomende zomer zijn:
 					</Paragraph>
 					<table className="table-auto">
-						<tr>
-							<td className="pr-4">Maandag</td>
-							<td>12:00 - 20:00</td>
-						</tr>
-						<tr>
-							<td className="pr-4">Dinsdag</td>
-							<td>12:00 - 20:00</td>
-						</tr>
-						<tr>
-							<td className="pr-4">Woensdag</td>
-							<td>12:00 - 20:00</td>
-						</tr>
-						<tr>
-							<td className="pr-4">Donderdag</td>
-							<td>12:00 - 20:00</td>
-						</tr>
-						<tr>
-							<td className="pr-4">Vrijdag</td>
-							<td>12:00 - 20:00</td>
-						</tr>
-						<tr>
-							<td className="pr-4">Zaterdag</td>
-							<td>12:00 - 20:00</td>
-						</tr>
-						<tr>
-							<td className="pr-4">Zondag</td>
-							<td>16:00 - 20:00</td>
-						</tr>
+						<tbody>
+							<tr>
+								<td className="pr-4">Maandag</td>
+								<td>12:00 - 20:00</td>
+							</tr>
+							<tr>
+								<td className="pr-4">Dinsdag</td>
+								<td>12:00 - 20:00</td>
+							</tr>
+							<tr>
+								<td className="pr-4">Woensdag</td>
+								<td>12:00 - 20:00</td>
+							</tr>
+							<tr>
+								<td className="pr-4">Donderdag</td>
+								<td>12:00 - 20:00</td>
+							</tr>
+							<tr>
+								<td className="pr-4">Vrijdag</td>
+								<td>12:00 - 20:00</td>
+							</tr>
+							<tr>
+								<td className="pr-4">Zaterdag</td>
+								<td>12:00 - 20:00</td>
+							</tr>
+							<tr>
+								<td className="pr-4">Zondag</td>
+								<td>16:00 - 20:00</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 			</Container>
