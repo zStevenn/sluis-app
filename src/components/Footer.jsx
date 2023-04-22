@@ -24,6 +24,18 @@ function FooterLink({ children, to, className = "" }) {
 		</Link>
 	)
 }
+function EFooterLink({ children, to, className = "" }) {
+	return (
+		<a href={to} target="_blank" title={children} alt={children}>
+			<FooterText
+				className={`text-sm py-0.5 flex gap-2 items-center text-neutral-100 ${className}`}
+			>
+				<MdKeyboardDoubleArrowRight className="inline-flex text-xl text-neutral-100" />
+				{children}
+			</FooterText>
+		</a>
+	)
+}
 
 export default function Footer() {
 	return (
@@ -49,24 +61,26 @@ export default function Footer() {
 				{/* Openingtimes */}
 				<div>
 					<FooterTitle className="mb-2">Openingstijden</FooterTitle>
-					<FooterText>Maandag: 12:00 - 21:00</FooterText>
-					<FooterText>Dinsdag: 12:00 - 21:00</FooterText>
-					<FooterText>Woensdag: 12:00 - 21:00</FooterText>
-					<FooterText>Donderdag: 12:00 - 21:00</FooterText>
-					<FooterText>Vrijdag: 12:00 - 21:00</FooterText>
-					<FooterText>Zaterdag: 12:00 - 21:00</FooterText>
-					<FooterText>Zondag: 16:00 - 21:00</FooterText>
+					<FooterText>Maandag: 12:00 - 20:00</FooterText>
+					<FooterText>Dinsdag: 12:00 - 20:00</FooterText>
+					<FooterText>Woensdag: 12:00 - 20:00</FooterText>
+					<FooterText>Donderdag: 12:00 - 20:00</FooterText>
+					<FooterText>Vrijdag: 12:00 - 20:00</FooterText>
+					<FooterText>Zaterdag: 12:00 - 20:00</FooterText>
+					<FooterText>Zondag: 16:00 - 20:00</FooterText>
 				</div>
 				{/* Links */}
 				<div>
 					<FooterTitle className="mb-2">Links</FooterTitle>
-					<FooterLink to="/bestellen">Bestellen</FooterLink>
+					<EFooterLink to="https://www.e-food.nl/driebergen/cafeteria-de-sluis">
+						Bestellen
+					</EFooterLink>
 					<FooterLink to="/menu">Menu</FooterLink>
 					<FooterLink to="/contact">Contact</FooterLink>
 					<FooterLink to="/nieuws">Nieuws</FooterLink>
-					<FooterLink to="/faq">FAQ</FooterLink>
-					<FooterLink to="/privacybeleid">Privacybeleid</FooterLink>
-					<FooterLink to="/sitemap">Sitemap</FooterLink>
+					{/* <FooterLink to="/faq">FAQ</FooterLink> */}
+					{/* <FooterLink to="/privacybeleid">Privacybeleid</FooterLink> */}
+					{/* <FooterLink to="/sitemap">Sitemap</FooterLink> */}
 				</div>
 			</Container>
 		</footer>
