@@ -108,6 +108,9 @@ export default function Footer() {
 					{/* <FooterLink to="/sitemap">Sitemap</FooterLink> */}
 				</div>
 			</Container>
+			<div className="bg-neutral-100">
+			<Container className="px-8 py-4 text-neutral-900">&copy; Cafetaria de Sluis 2023</Container>
+			</div>
 		</footer>
 	)
 }
