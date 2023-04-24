@@ -8,7 +8,7 @@ const Contact = lazy(() => import("../pages/Contact"))
 const News = lazy(() => import("../pages/News"))
 const Vacatures = lazy(() => import("../pages/Vacatures"))
 const VacatureBezorger = lazy(() => import("../pages/Bezorger"))
-// const NotFound = lazy(() => import("../pages/NotFound"))
+const NotFound = lazy(() => import("../pages/NotFound"))
 // const PrivacyPolicy = lazy(() => import("../pages/PrivacyPolicy"))
 // const CookiePolicy = lazy(() => import("../pages/CookiePolicy"))
 // const FAQ = lazy(() => import("../pages/FAQ"))
@@ -31,13 +31,7 @@ export default function DefaultRouter() {
 				{/* <Route path="/privacybeleid" element={<PrivacyPolicy />} /> */}
 				{/* <Route path="/cookiebeleid" element={<CookiePolicy />} /> */}
 				{/* <Route path="/FAQ" element={<FAQ />} /> */}
-				{/* Vacatures nest example */}
-				{/* <Route path="vacatures">
-						<Route index element={<Vacatures />} />
-						<Route path=":vacatureId" element={<Vacatures />} />
-						<Route path="*" element={<NotFound />} />
-					</Route> */}
-				{/* <Route path="*" element={<NotFound />} /> */}
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</Suspense>
 	)
