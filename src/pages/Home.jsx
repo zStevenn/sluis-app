@@ -19,7 +19,8 @@ import {
 	CardWrapper,
 	CardText,
 	CardImage,
-	CardCTA,
+	ICardCTA,
+	ECardCTA,
 	CardContent,
 } from "../components/Card"
 import Container from "../components/Container"
@@ -74,7 +75,7 @@ export default function Home() {
 									<CardTitle>Hotwings</CardTitle>
 									<Paragraph>5 stuks</Paragraph>
 								</CardText>
-								<CardCTA
+								<ECardCTA
 									to="https://www.e-food.nl/driebergen/cafeteria-de-sluis/snacks/kip-snacks"
 									product="Hotwings 5st"
 								/>
@@ -89,7 +90,7 @@ export default function Home() {
 									<CardTitle>Cheesecrack</CardTitle>
 									<Paragraph>Gevuld met kaas</Paragraph>
 								</CardText>
-								<CardCTA
+								<ECardCTA
 									to="https://www.e-food.nl/driebergen/cafeteria-de-sluis/snacks/souffle"
 									product="Cheesecrack"
 								/>
@@ -113,9 +114,9 @@ export default function Home() {
 										In 2023 hebben wij onze nieuwe website gelanceerd! We...
 									</Paragraph>
 								</CardText>
-								<CardCTA
-									to="https://www.e-food.nl/driebergen/cafeteria-de-sluis/snacks/kip-snacks"
-									product="Nieuwe website"
+								<ICardCTA
+									to="/nieuws"
+									title="Nieuwe website"
 								/>
 							</CardContent>
 						</CardWrapper>
@@ -130,9 +131,9 @@ export default function Home() {
 										We hopen dat 2023 een mooi jaar wordt voor iedereen...
 									</Paragraph>
 								</CardText>
-								<CardCTA
-									to="https://www.e-food.nl/driebergen/cafeteria-de-sluis/snacks/souffle"
-									product="Gelukkig nieuwjaar!"
+								<ICardCTA
+									to="/nieuws"
+									title="Gelukkig nieuwjaar!"
 								/>
 							</CardContent>
 						</CardWrapper>
@@ -148,9 +149,9 @@ export default function Home() {
 										geïnstalleerd...
 									</Paragraph>
 								</CardText>
-								<CardCTA
-									to="https://www.e-food.nl/driebergen/cafeteria-de-sluis/snacks/souffle"
-									product="Tegels vervangen"
+								<ICardCTA
+									to="/nieuws"
+									title="Tegels vervangen"
 								/>
 							</CardContent>
 						</CardWrapper>
