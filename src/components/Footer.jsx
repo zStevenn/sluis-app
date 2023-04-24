@@ -61,13 +61,38 @@ export default function Footer() {
 				{/* Openingtimes */}
 				<div>
 					<FooterTitle className="mb-2">Openingstijden</FooterTitle>
-					<FooterText>Maandag: 12:00 - 20:00</FooterText>
-					<FooterText>Dinsdag: 12:00 - 20:00</FooterText>
-					<FooterText>Woensdag: 12:00 - 20:00</FooterText>
-					<FooterText>Donderdag: 12:00 - 20:00</FooterText>
-					<FooterText>Vrijdag: 12:00 - 20:00</FooterText>
-					<FooterText>Zaterdag: 12:00 - 20:00</FooterText>
-					<FooterText>Zondag: 16:00 - 20:00</FooterText>
+					<table className="table-auto text-neutral-100 text-sm">
+						<tbody>
+							<tr>
+								<td className="pr-4 py-0.5">Maandag</td>
+								<td>12:00 - 20:00</td>
+							</tr>
+							<tr>
+								<td className="pr-4 py-0.5">Dinsdag</td>
+								<td>12:00 - 20:00</td>
+							</tr>
+							<tr>
+								<td className="pr-4 py-0.5">Woensdag</td>
+								<td>12:00 - 20:00</td>
+							</tr>
+							<tr>
+								<td className="pr-4 py-0.5">Donderdag</td>
+								<td>12:00 - 20:00</td>
+							</tr>
+							<tr>
+								<td className="pr-4 py-0.5">Vrijdag</td>
+								<td>12:00 - 20:00</td>
+							</tr>
+							<tr>
+								<td className="pr-4 py-0.5">Zaterdag</td>
+								<td>12:00 - 20:00</td>
+							</tr>
+							<tr>
+								<td className="pr-4 py-0.5">Zondag</td>
+								<td>16:00 - 20:00</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 				{/* Links */}
 				<div>
