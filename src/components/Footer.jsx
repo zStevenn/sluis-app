@@ -39,8 +39,8 @@ function EFooterLink({ children, to, className = "" }) {
 
 export default function Footer() {
 	return (
-		<footer className="bg-primary px-8 py-8 mt-8">
-			<Container className="flex flex-col md:flex-row md:justify-between gap-8">
+		<footer className="bg-primary mt-8">
+			<Container className="flex flex-col md:flex-row md:justify-between gap-8 px-8 py-8">
 				{/* Adress details */}
 				<div>
 					<FooterTitle className="mb-2">Adresgegevens</FooterTitle>
