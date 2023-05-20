@@ -1,0 +1,18 @@
+.cardFadeIn {
+	animation-name: cardFadeIn;
+	animation-duration: 750ms;
+}
+
+@keyframes cardFadeIn {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	70% {
+		opacity: 1;
+		transform: translateX(10px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}

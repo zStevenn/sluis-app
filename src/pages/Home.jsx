@@ -34,9 +34,9 @@ export default function Home() {
 					src={heroImage}
 					alt="Bezorger"
 					title="Bezorger"
-					className="h-36 mix-blend-color-burn"
+					className="h-36 mix-blend-color-burn fade-in-left-750"
 				/>
-				<div className="flex flex-col text-center gap-4">
+				<div className="flex flex-col text-center gap-4 fade-in-left-750">
 					<div>
 						<HeroTitle>
 							Bestel nu via <br />

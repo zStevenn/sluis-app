@@ -10,3 +10,51 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+/* Create a fade in effect from the left with keyframes on a seperate class */
+.fade-in-left-750 {
+	animation: fadeInLeft 750ms ease-out;
+	animation-fill-mode: both;
+}
+
+.fade-in-left-1000-delay {
+	animation: fadeInLeft 1000ms ease-out;
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-75px);
+	}
+	70% {
+		opacity: 1;
+		transform: translateX(15px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/* Create a fade in effect from the bottom with keyframes on a seperate class */
+.fade-in-bottom-750 {
+	animation: fadeInBottom 750ms ease-out;
+	animation-fill-mode: both;
+}
+
+.fade-in-bottom-1000-delay {
+	animation: fadeInBottom 1000ms ease-out;
+}
+
+@keyframes fadeInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+	70% {
+		transform: translateY(-10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
