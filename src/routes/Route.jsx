@@ -23,6 +23,7 @@ export default function DefaultRouter() {
 				<Route exact path="/contact" element={<Contact />} />
 				<Route exact path="/nieuws" element={<News />} />
 				<Route exact path="/vacatures" element={<Vacatures />} />
+				<Route exact path="/loading" element={<Loading />} />
 				<Route
 					exact
 					path="/vacatures/bezorger"

@@ -1,10 +1,27 @@
-import { MdDownloading } from "react-icons/md"
-
 export default function Loading() {
 	return (
-		<div className="flex flex-col items-center justify-center h-full">
-			<div className="animate-spin h-32 w-32">
-				<MdDownloading className="text-9xl" />
+		<div className="h-[85vh] flex flex-col mx-8 pt-8 gap-4 animate-pulse">
+			<div className="h-9 w-1/2 rounded bg-neutral-300/90"></div>
+			<div className="grid gap-2">
+
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
+			<div className="h-4 w-full rounded bg-neutral-300/90"></div>
 			</div>
 		</div>
 	)
